@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=80.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aep-connectors"
+version = "0.1.0"
+description = "Adapter-first connectivity contracts for existing Agent runtimes"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "AEP AI", email = "opensource@aepai.org" }]
+keywords = ["aep", "ai-agents", "connectors", "openclaw", "hermes"]
+requires-python = ">=3.12,<3.13"
+
+[project.urls]
+Homepage = "https://aepai.org"
+Documentation = "https://github.com/aepai-org/aep-docs"
+Repository = "https://github.com/aepai-org/aep-connectors"
+Issues = "https://github.com/aepai-org/aep-connectors/issues"
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.16.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
