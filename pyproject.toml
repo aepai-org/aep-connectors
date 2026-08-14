@@ -3,7 +3,7 @@ requires = ["setuptools>=80.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aep-connectors"
+name = "aep-ai-connectors"
 version = "0.1.0"
 description = "Adapter-first connectivity contracts for existing Agent runtimes"
 readme = "README.md"
