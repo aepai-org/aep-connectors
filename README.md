@@ -26,7 +26,7 @@ heartbeat, Task, and Result contracts. They do not host or modify a runtime.
 ## Install
 
 ```bash
-python -m pip install aep-connectors
+python -m pip install aep-ai-connectors
 ```
 
 ## Supported adapters
