@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aep-ai-connectors"
-version = "0.1.0"
+version = "0.2.0"
 description = "Adapter-first connectivity contracts for existing Agent runtimes"
 readme = "README.md"
 license = "Apache-2.0"
